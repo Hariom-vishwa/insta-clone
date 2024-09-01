@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Like Button using DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="mainCont">
+        <div id="heading">
+            <h1>Instagram</h1>
+            <div>
+                <i class="ri-heart-3-line"></i>
+                <i class="ri-messenger-line"></i>
+            </div>
+        </div>
+
+
+        <!-- Story  -->
+
+        <div id="storyPg">
+            <div id="wholeStory">
+                <div id="proBar">
+                    <div id="proThumb"></div>
+                </div>
+                <div id="storyHeader">
+                    <div id="idDets">
+                    </div>
+                    <i class="ri-more-2-fill"></i>
+                </div>
+            </div>
+            <div id="storyFooter">
+                <input type="text" placeholder="Message">
+                <i class="ri-heart-3-line"></i>
+                <i class="ri-send-plane-line"></i>
+            </div>
+        </div>
+
+
+        <!-- Stories Section  -->
+
+        <div id="storiesCont">
+        </div>
+
+
+        <!-- Post Section  -->
+
+        <div id="info">
+            <div id="proInfo">
+                <img src="https://images.unsplash.com/photo-1628015081036-0747ec8f077a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <span id="idName">dummyId001</span>
+            </div>
+            <div id="tripleDot">
+                <i class="ri-more-2-fill"></i>
+            </div>
+        </div>
+
+        <!-- Main Image  -->
+
+        <div id="container">
+            <img id="mainImg"
+                src="https://images.unsplash.com/photo-1682687982141-0143020ed57a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Girl with skateboard.jpg">
+            <i class="ri-heart-3-fill" id="dblHeart"></i>
+        </div>
+
+
+        <!-- Buttons  -->
+
+        <div id="btn-cont">
+            <div id="leftBtn">
+                <i class="ri-heart-3-fill" id="heart"></i><span id="likeCount">993</span>
+                <i class="ri-chat-3-line"></i><span id="likeCount">135</span>
+                <i class="ri-send-plane-line"></i><span id="likeCount">13</span>
+            </div>
+            <div id="rightBtn">
+                <i class="ri-bookmark-line"></i>
+            </div>
+        </div>
+        <!-- Post Detail  -->
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aspernatur mollitia pariatur
+            <span style="font-weight: 300;">...more</span>
+        </p>
+        <div>
+            <h6>3 hours ago</h6>
+        </div>
+
+        <hr style="width: 100%;" />
+
+        <!-- Footer  -->
+
+        <h3 style="font-weight: 400;">Hariom Vishwakarma</h3>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="story.js"></script>
+</body>
+
+</html>
