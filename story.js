@@ -68,6 +68,7 @@ const storyObj = [
 // Instagram Story
 
 const storyCont = document.querySelector("#storiesCont");
+const delBtn = document.querySelector("#delBtn");
 
 function initStory() {
   storyObj.forEach((value, index) => {
@@ -80,23 +81,29 @@ function initStory() {
 
   // Add event listener to the parent container
   storyCont.addEventListener("click", function (dets) {
-      document.querySelector("#idDets").innerHTML = `
+    document.querySelector("#idDets").innerHTML = `
       <img src="${storyObj[dets.target.id].proPic}" alt="">
       <h5>${storyObj[dets.target.id].name}</h5>
       <h6>${storyObj[dets.target.id].time}</h6>
       `;
-      document.querySelector("#storyPg").style.display = "block";
-      document.querySelector("#storyPg").style.transform = "scale(1)";
-      document.querySelector("body").style.overflow = "hidden";
-      document.querySelector("#wholeStory").style.backgroundImage = `url(${
-        storyObj[dets.target.id].storyImg
-      })`;
-      setTimeout(function () {
-        document.querySelector("body").style.overflow = "auto";
-        document.querySelector("#storyPg").style.display = "none";
-        document.querySelector("#storyPg").style.transform = "scale(0)";
-      }, 5000);
+    document.querySelector("#storyPg").style.display = "block";
+    document.querySelector("#storyPg").style.transform = "scale(1)";
+    document.querySelector("body").style.overflow = "hidden";
+    document.querySelector("#wholeStory").style.backgroundImage = `url(${
+      storyObj[dets.target.id].storyImg
+    })`;
+    setTimeout(function () {
+      document.querySelector("body").style.overflow = "auto";
+      document.querySelector("#storyPg").style.display = "none";
+      document.querySelector("#storyPg").style.transform = "scale(0)";
+    }, 5000);
   });
 }
+
+delBtn.addEventListener("click", function () {
+  document.querySelector("body").style.overflow = "auto";
+  document.querySelector("#storyPg").style.display = "none";
+  document.querySelector("#storyPg").style.transform = "scale(0)";
+});
 
 initStory();
