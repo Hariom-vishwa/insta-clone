@@ -127,7 +127,7 @@ function posts() {
             <img class="mainImg" src="${value.postImg || ""}" alt="${
       value.caption || ""
     }">
-            <i class="ri-heart-3-fill dblHeart"></i>
+          <!--   <i class="ri-heart-3-fill dblHeart"></i>  -->
         </div>
 
         <!-- Post Interaction Buttons -->
