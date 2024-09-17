@@ -6,12 +6,7 @@ const storyObj = [
       "https://images.unsplash.com/photo-1723300677966-ab58ec1d0b2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Eden",
     time: "2h ",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
+    
   },
   {
     proPic:
@@ -20,12 +15,7 @@ const storyObj = [
       "https://images.unsplash.com/photo-1724759401545-f0d37d5bbd27?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "George",
     time: "22min ",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
+   
   },
   {
     proPic:
@@ -34,12 +24,7 @@ const storyObj = [
       "https://images.unsplash.com/photo-1724690950856-7d782d532f5f?q=80&w=1897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Selena",
     time: "43min ",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
+    
   },
   {
     proPic:
@@ -48,12 +33,7 @@ const storyObj = [
       "https://images.unsplash.com/photo-1683009427041-d810728a7cb6?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Jacey",
     time: "4h ",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
+    
   },
   {
     proPic:
@@ -62,12 +42,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1682687982141-0143020ed57a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Katrina",
     time: "5h ",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
   },
   {
     proPic:
@@ -76,12 +50,7 @@ const storyObj = [
       "https://images.unsplash.com/photo-1724814816550-195cfd07ec88?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Jasmine",
     time: "3min ",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
+    
   },
   {
     proPic:
@@ -90,12 +59,7 @@ const storyObj = [
       "https://images.unsplash.com/photo-1714912213756-821842ebe76a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Alanna",
     time: "5h",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
+    
   },
   {
     proPic:
@@ -104,12 +68,7 @@ const storyObj = [
       "https://images.unsplash.com/photo-1601647021419-23e842a6e43d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Kierra",
     time: "3min ago",
-    postImg: "",
-    caption: "",
-    like: "",
-    comment: "",
-    share: "",
-    postTime: "",
+    
   },
 ];
 
