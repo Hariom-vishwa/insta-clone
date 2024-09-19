@@ -6,7 +6,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1723300677966-ab58ec1d0b2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Eden",
     time: "2h ",
-    
   },
   {
     proPic:
@@ -15,7 +14,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1724759401545-f0d37d5bbd27?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "George",
     time: "22min ",
-   
   },
   {
     proPic:
@@ -24,7 +22,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1724690950856-7d782d532f5f?q=80&w=1897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Selena",
     time: "43min ",
-    
   },
   {
     proPic:
@@ -33,7 +30,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1683009427041-d810728a7cb6?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Jacey",
     time: "4h ",
-    
   },
   {
     proPic:
@@ -50,7 +46,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1724814816550-195cfd07ec88?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Jasmine",
     time: "3min ",
-    
   },
   {
     proPic:
@@ -59,7 +54,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1714912213756-821842ebe76a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Alanna",
     time: "5h",
-    
   },
   {
     proPic:
@@ -68,7 +62,6 @@ const storyObj = [
       "https://images.unsplash.com/photo-1601647021419-23e842a6e43d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     name: "Kierra",
     time: "3min ago",
-    
   },
 ];
 
@@ -89,25 +82,29 @@ function initStory() {
   // Add event listener to the parent container
   storyCont.addEventListener("click", function (dets) {
     document.querySelector("#idDets").innerHTML = `
-      <img src="${storyObj[dets.target.id].proPic}" alt="">
-      <h5>${storyObj[dets.target.id].name}</h5>
-      <h6>${storyObj[dets.target.id].time}</h6>
-      `;
+        <img src="${storyObj[dets.target.id].proPic}" alt="">
+        <h5>${storyObj[dets.target.id].name}</h5>
+        <h6>${storyObj[dets.target.id].time}</h6>
+        `;
     document.querySelector("#storyPg").style.display = "block";
     document.querySelector("#storyPg").style.transform = "scale(1)";
     document.querySelector("body").style.overflow = "hidden";
     document.querySelector("#wholeStory").style.backgroundImage = `url(${
       storyObj[dets.target.id].storyImg
     })`;
+    document.querySelector("#bottomNav").style.display = "none";
+
     setTimeout(function () {
       document.querySelector("body").style.overflow = "auto";
       document.querySelector("#storyPg").style.display = "none";
       document.querySelector("#storyPg").style.transform = "scale(0)";
+      document.querySelector("#bottomNav").style.display = "flex";
     }, 5000);
   });
 }
 
 delBtn.addEventListener("click", function () {
+  document.querySelector("#bottomNav").style.display = "flex";
   document.querySelector("body").style.overflow = "auto";
   document.querySelector("#storyPg").style.display = "none";
   document.querySelector("#storyPg").style.transform = "scale(0)";
